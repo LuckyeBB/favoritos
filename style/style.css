@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #FF0000;
+    --cor-terciaria: white;
+    --cor-hover: #3D0000;
+
+    --fonte-primaria: "Noto Sans", sans-serif;
+}
+
+/* .noto-sans-<uniquifier> {
+  font-family: 
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+}
+
+.cabecalho {
+    padding: 1%;
+    background-color: var(--cor-secundaria);
+    
+}
+
+.cabecalho__navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--cor-terciaria);
+    
+}
+
+.cabecalho__navegador__links {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10%;
+    padding: 0 2%;
+}
+
+.cabecalho__navegador__link {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+}
+
+.secao1 {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+    align-items: center;
+    justify-content: center;
+    gap: calc(1vh*10);
+}
+
+.secao1__titulo {
+    font-size: 50px;
+}
+
+.secao1__imagens {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.secao1__imagem {
+    width: 250px;
+    height: 350px;
+    padding: 1%;
+}
