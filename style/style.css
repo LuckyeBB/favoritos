@@ -91,8 +91,14 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .cabecalho__navegador__titulo{
+        padding-top: 2%;
+    }
+
     .cabecalho__navegador__links {
         justify-content: center;
+        padding: 2% 0;
     }
 
     .secao1__titulo {
