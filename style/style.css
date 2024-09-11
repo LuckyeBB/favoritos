@@ -57,6 +57,7 @@ body {
     color: var(--cor-primaria);
     font-family: var(--fonte-primaria);
     font-weight: 600;
+    font-size: 1em;
 }
 
 .secao1 {
@@ -69,7 +70,7 @@ body {
 }
 
 .secao1__titulo {
-    font-size: 50px;
+    font-size: calc(40px + 1vw);
 }
 
 .secao1__imagens {
@@ -83,4 +84,23 @@ body {
     width: 250px;
     height: 350px;
     padding: 1%;
+}
+
+@media (max-width:550px) {
+    .cabecalho__navegador {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabecalho__navegador__links {
+        justify-content: center;
+    }
+
+    .secao1__titulo {
+        text-align: center;
+        height: auto;
+    }
+
+    .secao1__imagens{
+        width: auto;
+    }
 }
