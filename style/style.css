@@ -73,16 +73,15 @@ body {
     font-size: calc(40px + 1vw);
 }
 
-.secao1__imagens {
+.secao1__audios {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
 }
 
-.secao1__imagem {
-    width: 250px;
-    height: 350px;
+.secao1__audio {
+    width: 50%;
     padding: 1%;
 }
 
